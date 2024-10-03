@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <script>
+         function LinearSearch(arr,searchItem)
+  {
+     for(let i=0;i<arr.length;i++)
+    {
+        if(arr[i]===searchItem)
+      {
+        return true;
+  
+       }
+      
+         
+    } 
+    return false   
+ }
+    let arr=[10,20,30,40];
+        let searchItem=20;
+
+    let res=LinearSearch(arr,searchItem);
+    if(res)
+    {
+        document.write(`${searchItem} is  prasent in array `);
+    }
+    else 
+    {
+        document.write(`${searchItem} is not prasent in array `);
+    }
+    </script> -->
+    <!-- <script>
+    let arr=[10,20,30,40];
+        let searchItem=40;
+        let index=undefined;
+        for(let i=0;i<arr.length;i++)
+    {
+        if(arr[i]===searchItem)
+    {
+        index=i;
+        break;
+    }
+    }      
+    document.write(index);
+    
+    
+    </script> -->
+    <script>
+    let eleSearch=()=>{
+        let arr=[10,20,30,40];
+        let searchItem=document.getElementById('ele').value
+        let index=undefined;
+        for(let i=0;i<arr.length;i++)
+    {
+        if(arr[i]==searchItem)
+    {
+        index=i;
+        break;
+    }
+    }      
+    document.write(index);
+    
+        
+    }
+</script>
+    <input type="text" id="ele" placeholder="Enter element to search">
+    <button onclick="eleSearch()">search</button>
+</body>
+</html>
